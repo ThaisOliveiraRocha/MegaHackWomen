@@ -22,24 +22,23 @@ export const Curiosities = ({
     navigation.navigate({ routeName });
   };
   return (
-    <View>
-      <TouchableOpacity onPress={goToNext} style={styles.container}>
-        <ImageBackground source={imageBackground} style={styles.imageBkg}>
-          <View style={styles.textContainer}>
-            <Text style={styles.title}>{title}</Text>
-            <Text style={styles.description}>{description}</Text>
+    <View style={styles.container}>
+      <ImageBackground source={imageBackground} style={styles.imageBkg}>
+        <View style={styles.textContainer}>
+          <Text style={styles.title}>{title}</Text>
+          <Text style={styles.description}>{description}</Text>
+        </View>
+
+        <View style={styles.bottomContainer}>
+          <View style={styles.notesContainer}>
+            <Text style={styles.notes}>{notes}</Text>
           </View>
 
-          <View style={styles.bottomContainer}>
-            <View style={styles.notesContainer}>
-              <Text style={styles.notes}>{notes}</Text>
-            </View>
-            <View style={styles.btn}>
-              <Image source={imageButton} />
-            </View>
-          </View>
-        </ImageBackground>
-      </TouchableOpacity>
+          <TouchableOpacity onPress={goToNext} style={styles.btn}>
+            <Image source={imageButton} />
+          </TouchableOpacity>
+        </View>
+      </ImageBackground>
     </View>
   );
 };
