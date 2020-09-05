@@ -11,7 +11,7 @@ export const ScreenTipDidYouKnow = ({ navigation }) => {
         title="Você sabia?"
         description="Entre 100 vagas no mercado de tecnologia, apenas 37 são ocupadas por mulheres.*  No mesmo setor, 46% delas dizem receber salários inferiores aos homens."
         notes="* De acordo com o Cadastro Geral de Empregados e Desempregados (Caged)."
-        imageBackground={require("../../assets/images/pink-background.png")}
+        imageBackground={require("../../assets/images/white-background.png")}
         imageButton={require("../../assets/images/arrow.png")}
       />
     </View>

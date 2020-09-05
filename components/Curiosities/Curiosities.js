@@ -64,19 +64,19 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 24,
-    color: "#FFF",
+    color: "#000",
     fontWeight: "700",
     width: "80%",
     marginBottom: 16,
   },
   description: {
-    color: "#FFF",
+    color: "#000",
     fontSize: 16,
     fontWeight: "300",
     width: "80%",
   },
   notes: {
-    color: "#FFF",
+    color: "#000",
     fontSize: 12,
     fontWeight: "300",
 
@@ -85,9 +85,6 @@ const styles = StyleSheet.create({
   notesContainer: {
     flex: 1,
     marginStart: 24,
-    color: "#FFF",
-    fontSize: 12,
-    fontWeight: "300",
   },
   bottomContainer: {
     flex: 1,

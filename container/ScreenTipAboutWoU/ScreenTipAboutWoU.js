@@ -11,7 +11,7 @@ export const ScreenTipAboutWoU = ({ navigation }) => {
         title="Sobre a WoU"
         description="O nosso objetivo é conectar mulheres e motivá-las a seguir na área de TI.
         Somos uma plataforma feita por mulheres, para mulheres."
-        imageBackground={require("../../assets/images/pink-background.png")}
+        imageBackground={require("../../assets/images/white-background.png")}
         imageButton={require("../../assets/images/arrow.png")}
       />
     </View>
