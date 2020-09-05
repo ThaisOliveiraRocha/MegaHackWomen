@@ -22,7 +22,7 @@ export const Curiosities = ({
     navigation.navigate({ routeName });
   };
   return (
-    <View style={styles.container}>
+    <TouchableOpacity onPress={goToNext} style={styles.container}>
       <ImageBackground source={imageBackground} style={styles.imageBkg}>
         <View style={styles.textContainer}>
           <Text style={styles.title}>{title}</Text>
@@ -39,7 +39,7 @@ export const Curiosities = ({
           </TouchableOpacity>
         </View>
       </ImageBackground>
-    </View>
+    </TouchableOpacity>
   );
 };
 
