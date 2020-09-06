@@ -2,7 +2,11 @@ import React from "react";
 import { View, TouchableOpacity, StyleSheet, Text, Image } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
 
-export const Menu = () => {
+export const Menu = ({ navigation }) => {
+  const goToPageMenu = (route) => {
+    navigation.navigate(route);
+  };
+
   return (
     <View style={styles.container}>
       <View style={styles.topComponent}>
@@ -15,50 +19,74 @@ export const Menu = () => {
           <Text style={styles.email}>jessicafs@gmail.com</Text>
         </View>
       </View>
-      <TouchableOpacity>
-        <View style={styles.buttonContainer}>
+      <TouchableOpacity
+        style={styles.buttonContainer}
+        onPress={() => goToPageMenu("Home")}
+      >
+        <View style={styles.button}>
           <Icon name="home" size={24} style={styles.icon} />
           <Text style={styles.title}>Home</Text>
         </View>
       </TouchableOpacity>
-      <TouchableOpacity>
-        <View style={styles.buttonContainer}>
+      <TouchableOpacity
+        style={styles.buttonContainer}
+        onPress={() => goToPageMenu()}
+      >
+        <View style={styles.button}>
           <Icon name="person" size={24} style={styles.icon} />
           <Text style={styles.title}>Meu Perfil</Text>
         </View>
       </TouchableOpacity>
-      <TouchableOpacity>
-        <View style={styles.buttonContainer}>
+      <TouchableOpacity
+        style={styles.buttonContainer}
+        onPress={() => goToPageMenu("PapoPrivado")}
+      >
+        <View style={styles.button}>
           <Icon name="lock" size={24} style={styles.icon} />
           <Text style={styles.title}>Papo Privado</Text>
         </View>
       </TouchableOpacity>
-      <TouchableOpacity>
-        <View style={styles.buttonContainer}>
+      <TouchableOpacity
+        style={styles.buttonContainer}
+        onPress={() => goToPageMenu()}
+      >
+        <View style={styles.button}>
           <Icon name="book" size={24} style={styles.icon} />
           <Text style={styles.title}>Fórum</Text>
         </View>
       </TouchableOpacity>
-      <TouchableOpacity>
-        <View style={styles.buttonContainer}>
+      <TouchableOpacity
+        style={styles.buttonContainer}
+        onPress={() => goToPageMenu()}
+      >
+        <View style={styles.button}>
           <Icon name="star" size={24} style={styles.icon} />
           <Text style={styles.title}>Eventos</Text>
         </View>
       </TouchableOpacity>
-      <TouchableOpacity>
-        <View style={styles.buttonContainer}>
+      <TouchableOpacity
+        style={styles.buttonContainer}
+        onPress={() => goToPageMenu()}
+      >
+        <View style={styles.button}>
           <Icon name="chat" size={24} style={styles.icon} />
           <Text style={styles.title}>Chat</Text>
         </View>
       </TouchableOpacity>
-      <TouchableOpacity>
-        <View style={styles.buttonContainer}>
+      <TouchableOpacity
+        style={styles.buttonContainer}
+        onPress={() => goToPageMenu()}
+      >
+        <View style={styles.button}>
           <Icon name="edit" size={24} style={styles.icon} />
           <Text style={styles.title}>Configurações</Text>
         </View>
       </TouchableOpacity>
-      <TouchableOpacity>
-        <View style={styles.buttonContainer}>
+      <TouchableOpacity
+        style={styles.buttonContainer}
+        onPress={() => goToPageMenu()}
+      >
+        <View style={styles.button}>
           <Icon name="close" size={24} style={styles.icon} />
           <Text style={styles.title}>Sair</Text>
         </View>
@@ -133,6 +161,9 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     marginLeft: 16,
     paddingVertical: 8,
+  },
+  button: {
+    flexDirection: "row",
   },
 });
 

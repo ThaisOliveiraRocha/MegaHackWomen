@@ -1,7 +1,6 @@
 import React from "react";
 import { View, TouchableOpacity, StyleSheet, Text, Image } from "react-native";
 import Home from "../../container/Home";
-import Menu from "../../components/Menu/Menu";
 
 export const HomePage = ({ navigation }) => {
   const openMenu = () => {
@@ -14,6 +13,7 @@ export const HomePage = ({ navigation }) => {
           <Image source={require("../../assets/images/menu.png")} />
         </View>
       </TouchableOpacity>
+      <Home navigation={navigation} />
     </View>
   );
 };
