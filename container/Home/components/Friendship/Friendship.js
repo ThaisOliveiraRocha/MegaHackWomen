@@ -9,9 +9,9 @@ export const Friendship = ({ navigation, content }) => {
         <Text style={styles.title}>{content.title}</Text>
       </View>
       <ScrollView horizontal>
-        {content.friendship.map((friend) => (
+        {content.friendship.map((friend, index) => (
           <View style={styles.card}>
-            <CardFriend navigation={navigation} friend={friend} />
+            <CardFriend navigation={navigation} friend={friend} key={index} />
           </View>
         ))}
       </ScrollView>
