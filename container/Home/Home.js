@@ -16,7 +16,7 @@ export const Home = ({ navigation }) => {
     <ScrollView>
       <View style={styles.container}>
         <View style={styles.writePost}>
-          <WritePost navigation={navigation} />
+          <WritePost navigation={navigation} routeName="PapoPrivado" />
         </View>
         <View style={styles.friendship}>
           <Friendship

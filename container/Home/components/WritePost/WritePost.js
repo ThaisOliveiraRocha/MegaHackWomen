@@ -1,9 +1,12 @@
 import React from "react";
 import { View, Image, Text, TouchableOpacity, StyleSheet } from "react-native";
 
-export const WritePost = ({ navigation }) => {
+export const WritePost = ({ navigation, routeName }) => {
+  const goToNextPage = () => {
+    navigation.navigate({ routeName });
+  };
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={goToNextPage}>
       <View style={styles.container}>
         <Image source={require("../../../../assets/images/note.png")} />
         <Text style={styles.title}>No que você está pensando?</Text>
