@@ -9,6 +9,8 @@ import CadastrarMulher from "./container/CadastrarMulher";
 import ScreenTipDidYouKnow from "./container/ScreenTipDidYouKnow";
 import ScreenTipAboutWoU from "./container/ScreenTipAboutWoU";
 import Home from "./container/Home";
+import PapoPrivado from "./container/PapoPrivado";
+import ChatSecreto from "./container/PapoPrivado/components/ChatSecreto/ChatSecreto";
 
 const Routes = createAppContainer(
   createStackNavigator(
@@ -21,6 +23,8 @@ const Routes = createAppContainer(
       DidYouKnow: ScreenTipDidYouKnow,
       AboutWoU: ScreenTipAboutWoU,
       Home: Home,
+      PapoPrivado: PapoPrivado,
+      ChatSecreto: ChatSecreto,
     },
     {
       headerMode: "none",
