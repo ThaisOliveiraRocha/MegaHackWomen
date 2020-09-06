@@ -8,19 +8,27 @@ import Cadastrar from "./container/Cadastrar";
 import CadastrarMulher from "./container/CadastrarMulher";
 import ScreenTipDidYouKnow from "./container/ScreenTipDidYouKnow";
 import ScreenTipAboutWoU from "./container/ScreenTipAboutWoU";
-import Home from './container/Home';
+import Home from "./container/Home";
 
 const Routes = createAppContainer(
-  createStackNavigator({
-    Splash: Splash,
-    Principal: Principal,
-    Entrar: Login,
-    Cadastrar: Cadastrar,
-    CadastrarMulher: CadastrarMulher,
-    DidYouKnow: ScreenTipDidYouKnow,
-    AboutWoU: ScreenTipAboutWoU,
-    Home: Home,
-  })
+  createStackNavigator(
+    {
+      Splash: Splash,
+      Principal: Principal,
+      Entrar: Login,
+      Cadastrar: Cadastrar,
+      CadastrarMulher: CadastrarMulher,
+      DidYouKnow: ScreenTipDidYouKnow,
+      AboutWoU: ScreenTipAboutWoU,
+      Home: Home,
+    },
+    {
+      headerMode: "none",
+      navigationOptions: {
+        headerVisible: false,
+      },
+    }
+  )
 );
 
 export default Routes;
