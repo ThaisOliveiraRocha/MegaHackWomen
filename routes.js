@@ -8,9 +8,10 @@ import Cadastrar from "./container/Cadastrar";
 import CadastrarMulher from "./container/CadastrarMulher";
 import ScreenTipDidYouKnow from "./container/ScreenTipDidYouKnow";
 import ScreenTipAboutWoU from "./container/ScreenTipAboutWoU";
-import Home from "./container/Home";
 import PapoPrivado from "./container/PapoPrivado";
 import ChatSecreto from "./container/PapoPrivado/components/ChatSecreto/ChatSecreto";
+import HomePage from "./pages/HomePage";
+import Menu from "./components/Menu/Menu";
 
 const Routes = createAppContainer(
   createStackNavigator(
@@ -22,9 +23,10 @@ const Routes = createAppContainer(
       CadastrarMulher: CadastrarMulher,
       DidYouKnow: ScreenTipDidYouKnow,
       AboutWoU: ScreenTipAboutWoU,
-      Home: Home,
+      Home: HomePage,
       PapoPrivado: PapoPrivado,
       ChatSecreto: ChatSecreto,
+      Menu: Menu,
     },
     {
       headerMode: "none",
