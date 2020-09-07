@@ -28,10 +28,7 @@ export const Menu = ({ navigation }) => {
           <Text style={styles.title}>Home</Text>
         </View>
       </TouchableOpacity>
-      <TouchableOpacity
-        style={styles.buttonContainer}
-        onPress={() => goToPageMenu()}
-      >
+      <TouchableOpacity style={styles.buttonContainer}>
         <View style={styles.button}>
           <Icon name="person" size={24} style={styles.icon} />
           <Text style={styles.title}>Meu Perfil</Text>
@@ -46,46 +43,31 @@ export const Menu = ({ navigation }) => {
           <Text style={styles.title}>Papo Privado</Text>
         </View>
       </TouchableOpacity>
-      <TouchableOpacity
-        style={styles.buttonContainer}
-        onPress={() => goToPageMenu()}
-      >
+      <TouchableOpacity style={styles.buttonContainer}>
         <View style={styles.button}>
           <Icon name="book" size={24} style={styles.icon} />
           <Text style={styles.title}>Fórum</Text>
         </View>
       </TouchableOpacity>
-      <TouchableOpacity
-        style={styles.buttonContainer}
-        onPress={() => goToPageMenu()}
-      >
+      <TouchableOpacity style={styles.buttonContainer}>
         <View style={styles.button}>
           <Icon name="star" size={24} style={styles.icon} />
           <Text style={styles.title}>Eventos</Text>
         </View>
       </TouchableOpacity>
-      <TouchableOpacity
-        style={styles.buttonContainer}
-        onPress={() => goToPageMenu()}
-      >
+      <TouchableOpacity style={styles.buttonContainer}>
         <View style={styles.button}>
           <Icon name="chat" size={24} style={styles.icon} />
           <Text style={styles.title}>Chat</Text>
         </View>
       </TouchableOpacity>
-      <TouchableOpacity
-        style={styles.buttonContainer}
-        onPress={() => goToPageMenu()}
-      >
+      <TouchableOpacity style={styles.buttonContainer}>
         <View style={styles.button}>
           <Icon name="edit" size={24} style={styles.icon} />
           <Text style={styles.title}>Configurações</Text>
         </View>
       </TouchableOpacity>
-      <TouchableOpacity
-        style={styles.buttonContainer}
-        onPress={() => goToPageMenu()}
-      >
+      <TouchableOpacity style={styles.buttonContainer}>
         <View style={styles.button}>
           <Icon name="close" size={24} style={styles.icon} />
           <Text style={styles.title}>Sair</Text>
