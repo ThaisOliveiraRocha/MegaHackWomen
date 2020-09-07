@@ -12,6 +12,7 @@ import PapoPrivado from "./container/PapoPrivado";
 import ChatSecreto from "./container/PapoPrivado/components/ChatSecreto/ChatSecreto";
 import HomePage from "./pages/HomePage";
 import Menu from "./components/Menu/Menu";
+import PapoPrivadoPage from "./pages/PapoPrivadoPage";
 
 const Routes = createAppContainer(
   createStackNavigator(
@@ -24,7 +25,7 @@ const Routes = createAppContainer(
       DidYouKnow: ScreenTipDidYouKnow,
       AboutWoU: ScreenTipAboutWoU,
       Home: HomePage,
-      PapoPrivado: PapoPrivado,
+      PapoPrivado: PapoPrivadoPage,
       ChatSecreto: ChatSecreto,
       Menu: Menu,
     },
