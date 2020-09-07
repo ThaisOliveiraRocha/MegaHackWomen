@@ -7,49 +7,16 @@ import {
   StyleSheet,
   ScrollView,
 } from "react-native";
-import ButtonStyled from "../../components/ButtonStyled/ButtonStyled";
+import StepOne from "./components/StepOne/StepOne";
 
 export const CadastrarMulher = ({ navigation }) => {
   const goToSplash = () => {
     navigation.navigate("Home");
   };
   return (
-    <ScrollView>
-      <View style={styles.container}>
-        <ImageBackground
-          source={require("../../assets/images/backgroundpurple.png")}
-          style={styles.image}
-        >
-          <View style={styles.textContainer}>
-            <Text>Cadastro</Text>
-            <TextInput placeholder="E-mail" style={styles.input} />
-            <TextInput placeholder="E-mail" style={styles.input} />
-            <TextInput placeholder="E-mail" style={styles.input} />
-            <TextInput placeholder="E-mail" style={styles.input} />
-            <TextInput placeholder="E-mail" style={styles.input} />
-            <TextInput placeholder="E-mail" style={styles.input} />
-            <TextInput placeholder="E-mail" style={styles.input} />
-            <TextInput placeholder="E-mail" style={styles.input} />
-            <TextInput placeholder="E-mail" style={styles.input} />
-            <TextInput placeholder="E-mail" style={styles.input} />
-            <TextInput placeholder="E-mail" style={styles.input} />
-            <TextInput
-              placeholder="Senha"
-              secureTextEntry={true}
-              style={styles.input}
-            />
-          </View>
-
-          <View style={styles.buttonContainer}>
-            <ButtonStyled
-              navigation={navigation}
-              title="Entrar"
-              routeName="Entrar"
-            />
-          </View>
-        </ImageBackground>
-      </View>
-    </ScrollView>
+    <View style={styles.container}>
+      <StepOne navigation={navigation} />
+    </View>
   );
 };
 
