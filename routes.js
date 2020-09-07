@@ -8,11 +8,11 @@ import Cadastrar from "./container/Cadastrar";
 import CadastrarMulher from "./container/CadastrarMulher";
 import ScreenTipDidYouKnow from "./container/ScreenTipDidYouKnow";
 import ScreenTipAboutWoU from "./container/ScreenTipAboutWoU";
-import PapoPrivado from "./container/PapoPrivado";
-import ChatSecreto from "./container/PapoPrivado/components/ChatSecreto/ChatSecreto";
 import HomePage from "./pages/HomePage";
 import Menu from "./components/Menu/Menu";
 import PapoPrivadoPage from "./pages/PapoPrivadoPage";
+import ChatSecreto from "./container/PapoPrivado/components/ChatSecreto";
+import StepTwo from "./container/CadastrarMulher/components/StepTwo";
 
 const Routes = createAppContainer(
   createStackNavigator(
@@ -28,6 +28,7 @@ const Routes = createAppContainer(
       PapoPrivado: PapoPrivadoPage,
       ChatSecreto: ChatSecreto,
       Menu: Menu,
+      StepTwo: StepTwo,
     },
     {
       headerMode: "none",
