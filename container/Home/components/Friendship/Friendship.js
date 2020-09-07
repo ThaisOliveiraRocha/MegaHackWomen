@@ -10,8 +10,8 @@ export const Friendship = ({ navigation, content }) => {
       </View>
       <ScrollView horizontal>
         {content.friendship.map((friend, index) => (
-          <View style={styles.card}>
-            <CardFriend navigation={navigation} friend={friend} key={index} />
+          <View style={styles.card} key={index}>
+            <CardFriend navigation={navigation} friend={friend} />
           </View>
         ))}
       </ScrollView>

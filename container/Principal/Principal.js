@@ -5,9 +5,12 @@ import ButtonStyled from "../../components/ButtonStyled/ButtonStyled";
 export const Principal = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Image source={require("../../assets/images/girls.png")} />
       <View style={styles.textContainer}>
-        <Text style={styles.title}>WoU</Text>
+        <Image
+          style={styles.logo}
+          source={require("../../assets/images/LogoWoU.png")}
+        />
+        <Text style={styles.title}>WomenUnited</Text>
       </View>
 
       <View style={styles.buttonContainer}>
@@ -30,14 +33,19 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: "column",
-    backgroundColor: '#fff',
+    backgroundColor: "#fff",
+  },
+  logo: {
+    marginTop: 56,
+    marginBottom: 24,
   },
   textContainer: {
     alignItems: "center",
     justifyContent: "center",
+    flex: 3,
   },
   title: {
-    color: "#122173",
+    color: "#272727",
     fontSize: 32,
     fontWeight: "bold",
   },
@@ -46,6 +54,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     flexDirection: "column",
+    marginBottom: 48,
   },
 });
 

@@ -7,8 +7,8 @@ export const PostList = ({ navigation, postList }) => {
     <View style={styles.container}>
       <Text style={styles.title}>{postList.title}</Text>
       {postList.posts.map((post, index) => (
-        <View style={styles.postContainer}>
-          <CardPost cardPost={post} key={index} />
+        <View style={styles.postContainer} key={index}>
+          <CardPost cardPost={post} />
         </View>
       ))}
     </View>
