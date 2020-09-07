@@ -31,13 +31,11 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
   },
   container: {
-    flex: 1,
     flexDirection: "column",
     backgroundColor: "#fff",
   },
   topContainer: {
     flexDirection: "column",
-    marginTop: 48,
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: "#fff",

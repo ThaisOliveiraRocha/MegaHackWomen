@@ -47,7 +47,7 @@ export const ChatSecreto = ({ navigation }) => {
         <ScrollView>
           {commentsArray.map((comment, index) => (
             <View style={styles.commentContainer}>
-              <View style={styles.header} key={index}>
+              <View style={styles.header} key={index} >
                 <Image
                   style={styles.avatar}
                   source={require("../../../../assets/images/unicorn.png")}
