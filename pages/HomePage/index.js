@@ -10,7 +10,7 @@ export const HomePage = ({ navigation }) => {
     <View>
       <TouchableOpacity style={styles.menuContainer} onPress={openMenu}>
         <View style={styles.menuImg}>
-          <Image source={require("../../assets/images/menu.png")} />
+          <Image source={require("../../assets/images/open-menu.png")} />
         </View>
       </TouchableOpacity>
       <Home navigation={navigation} />
@@ -21,12 +21,12 @@ export const HomePage = ({ navigation }) => {
 const styles = StyleSheet.create({
   menuContainer: {
     width: "100%",
-    height: 42,
-    backgroundColor: "#fff",
-    marginTop: 24,
+    height: 72,
+    backgroundColor: "#fae3eb",
   },
   menuImg: {
-    paddingVertical: 16,
+    marginTop: 12,
+    paddingVertical: 20,
     paddingHorizontal: 8,
   },
 });
