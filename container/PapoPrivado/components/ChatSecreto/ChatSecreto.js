@@ -8,24 +8,24 @@ import {
 
 const commentsArray = [
   {
+    name: "Unicórnio Anonimo",
     textComment:
-      "Existe uma estrutura maior que acaba barrando a chega de mulheres na área de TI. E quando elas chegam existe outro problema a ser enfrentado... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... ",
+      "Existe uma estrutura maior que acaba barrando a chegada de mulheres na área de TI. E quando elas chegam existe outro problema a ser enfrentado, por isso, é preciso que empresas se comprometam em melhorar seu ambiente interno",
   },
   {
+    name: "Princesa Anonima",
     textComment:
-      "Existe uma estrutura maior que acaba barrando a chega de mulheres na área de TI. E quando elas chegam existe outro problema a ser enfrentado... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... ",
+      "Eu concordo, mas imagino que as mulheres também precisam se interessar pela área...",
   },
   {
+    name: "Gatinha Anonima",
     textComment:
-      "Existe uma estrutura maior que acaba barrando a chega de mulheres na área de TI. E quando elas chegam existe outro problema a ser enfrentado... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... ",
+      "Não é só interesse. Eu mesma, queria muito ser programadora, mas quando cheguei na minha primeira empresa, fiquei tão assustada com o baixo número de mulheres, que talvez aquilo tenha me afetado de alguma forma e por isso desisti.",
   },
   {
+    name: "Flor Anonima",
     textComment:
-      "Existe uma estrutura maior que acaba barrando a chega de mulheres na área de TI. E quando elas chegam existe outro problema a ser enfrentado... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... ",
-  },
-  {
-    textComment:
-      "Existe uma estrutura maior que acaba barrando a chega de mulheres na área de TI. E quando elas chegam existe outro problema a ser enfrentado... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... etc... ",
+      "Eu entendo como você se sente, amiga.",
   },
 ];
 
@@ -41,18 +41,18 @@ export const ChatSecreto = ({ navigation }) => {
       <View style={styles.body}>
         <View style={styles.questionContainer}>
           <Text style={styles.question}>
-            Como podemos enfrentar o machismo na área de TI?
+            Por que não há tantas mulheres na área de Tecnologia da Informação?
           </Text>
         </View>
         <ScrollView>
           {commentsArray.map((comment, index) => (
-            <View style={styles.commentContainer}>
-              <View style={styles.header} key={index} >
+            <View style={styles.commentContainer} key={index}>
+              <View style={styles.header}>
                 <Image
                   style={styles.avatar}
                   source={require("../../../../assets/images/unicorn.png")}
                 />
-                <Text style={styles.name}>Unicórnio Anônimo</Text>
+                <Text style={styles.name}>{comment.name}</Text>
               </View>
               <Text style={styles.comment}>{comment.textComment}</Text>
             </View>
